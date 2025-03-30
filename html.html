@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha Inovador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div class="placar">
+            <p>Jogador 1 (X): <span id="jogador1-placar">0</span></p>
+            <p>Jogador 2 (O): <span id="jogador2-placar">0</span></p>
+        </div>
+        <div class="tabuleiro">
+            <div class="casa" data-index="0"></div>
+            <div class="casa" data-index="1"></div>
+            <div class="casa" data-index="2"></div>
+            <div class="casa" data-index="3"></div>
+            <div class="casa" data-index="4"></div>
+            <div class="casa" data-index="5"></div>
+            <div class="casa" data-index="6"></div>
+            <div class="casa" data-index="7"></div>
+            <div class="casa" data-index="8"></div>
+        </div>
+        <div class="botoes">
+            <button id="reset">Reiniciar Jogo</button>
+            <button id="modo-alternativo">Modo Alternativo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

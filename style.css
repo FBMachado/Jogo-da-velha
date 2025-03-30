@@ -1,0 +1,80 @@
+body {
+    background-image: url('img2.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Para cobrir toda a tela */
+    background-position: center center; /* Para centralizar a imagem */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente para destacar o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    margin: 30px 0;
+}
+
+.casa {
+    width: 120px;
+    height: 120px;
+    font-size: 3em;
+    border: 3px solid #00acc1;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.casa:hover {
+    background-color: #b2ebf2;
+}
+
+.casa.x {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.casa.o {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1em;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #00acc1;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00838f;
+}
